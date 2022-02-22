@@ -1,0 +1,123 @@
+header{
+  position: absolute;
+  width: 100%;
+  padding-top: 40px;
+}
+
+header .master-container{
+  max-width: 1400px;
+  margin-left: 240px;
+  display: flex;
+}
+
+header .master-container .logo-container{ 
+  width: 485px;
+}
+
+header .master-container .navbar {
+  width: 700px;
+}
+
+header .master-container .navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header .master-container .navbar ul li{
+  font: 16px Rubik;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 0.05em;
+  padding-top: 20px;
+}
+
+header .master-container .navbar ul li.contact-us-btn{
+  background-color: #EE4D47;
+  padding: 20px 25px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1300px){
+  header .master-container{
+    margin-left: 15%;
+  }
+}
+
+@media screen and (max-width: 1150px){
+  header .master-container{
+    margin-left: 5%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  header .master-container{
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  header .master-container .logo-container,
+  header .master-container .navbar {
+    width: inherit;
+  }
+
+  header .master-container .navbar ul li{
+    font-size: 14px;
+  }
+
+  header .master-container .navbar ul li.contact-us-btn {
+    padding: 15px;
+  }
+}
+
+header .display-mobile{
+  display: none;
+}
+@media screen and (max-width: 575px){
+  header .display-desktop{
+    display: none;
+  }
+
+  header .display-mobile{
+    display: block;
+  }
+
+  header .mobile-menu-toggle-icon{
+    font-size: 26px;
+    color: #fff;
+    top: 55px;
+    position: absolute;
+    right: 15px;
+  }
+
+  header .master-container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+
+  header .burger-menu.active-menu{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  header .burger-menu.active-menu .navbar{
+    background-color: #f27d6a;
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    padding: 25vh 0px;
+  }
+
+  header .burger-menu.active-menu .navbar ul{
+    flex-direction: column;
+  }
+
+  header .burger-menu.active-menu .navbar ul li{
+    margin: 15px 0;
+  }
+}
