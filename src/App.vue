@@ -34,6 +34,10 @@
     margin: 0;
     padding: 0;
   }
+
+  body {
+    overflow-x:hidden;
+  }
   
   a,
   a[href] {
