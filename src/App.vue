@@ -48,4 +48,9 @@
   .d-none{
     display: none;
   }
+
+  .animate {
+    transform: translate(0, 0);
+    transition: transform 3s ease;
+  }
 </style>
