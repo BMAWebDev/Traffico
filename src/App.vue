@@ -35,7 +35,8 @@
     padding: 0;
   }
 
-  body {
+  body,
+  #app {
     overflow-x:hidden;
   }
   
