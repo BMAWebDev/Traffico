@@ -53,6 +53,10 @@
   align-items: center;
 }
 
+.about-us .master-container .right-content img.initialAnimPos{
+  transform: translate(1500px, 0);
+}
+
 @media screen and (max-width: 1200px){
   .about-us .master-container{
     flex-direction: column;

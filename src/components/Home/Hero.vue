@@ -7,21 +7,31 @@
           <button class="get-started">Get started <img src="@/assets/img/arrow-right.svg" alt=""></button>
         </a>
       </div>
-      <img class="car" src="@/assets/img/car.svg" alt="">
+      <img class="car animate initialAnimPos" src="@/assets/img/car.svg" alt="">
     </div>
   </section>
 </template>
 
 <script>
   import '@/assets/css/hero.css'
-  import gsap from 'gsap'
 
   export default {
-    mounted() {
-      gsap.from('.car', {
-        duration: 3, 
-        x: -750
-      })
+    created() {
+      window.addEventListener('scroll', this.animate);
+    },
+    destroyed() {
+      window.removeEventListener('scroll', this.animate);
+    },
+    methods: {
+      animate(){
+        const car = document.querySelector('.car.animate');
+        if(window.scrollY >= car.offsetTop - car.height){
+          car.classList.remove('initialAnimPos');
+        }
+        else{
+          car.classList.add('initialAnimPos');
+        }
+      }
     },
   }
 </script>

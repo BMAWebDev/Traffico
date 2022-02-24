@@ -15,7 +15,7 @@
         </div>
       </div>
       <div class="disk right-content">
-        <img class="about-us-delivery" src="@/assets/img/about-us-delivery.svg" alt="">
+        <img class="about-us-delivery animate initialAnimPos" src="@/assets/img/about-us-delivery.svg" alt="">
       </div>
     </div>
   </section>
@@ -23,14 +23,24 @@
 
 <script>
   import '@/assets/css/about-us.css'
-  import gsap from 'gsap'
 
   export default {
-    mounted() {
-      gsap.from('.about-us-delivery', {
-        duration: 3, 
-        x: 1500
-      })
+    created() {
+      window.addEventListener('scroll', this.animate);
+    },
+    destroyed() {
+      window.removeEventListener('scroll', this.animate);
+    },
+    methods: {
+      animate(){
+        const delivery = document.querySelector('.about-us-delivery.animate');
+        if(window.scrollY >= delivery.offsetTop - delivery.height){
+          delivery.classList.remove('initialAnimPos');
+        }
+        else{
+          delivery.classList.add('initialAnimPos');
+        }
+      }
     },
   }
 </script>
