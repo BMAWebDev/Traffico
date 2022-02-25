@@ -85,6 +85,10 @@
 }
 
 @media screen and (max-width: 500px){
+  .about-us{
+    margin-bottom: 50px;
+  }
+
   .about-us .left-content{
     padding-top: 0;
   }

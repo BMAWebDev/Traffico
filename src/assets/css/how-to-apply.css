@@ -86,6 +86,11 @@
 }
 
 @media screen and (max-width: 500px){
+  .how-to-apply{
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
   .how-to-apply .right-content{
     padding-top: 0;
   }
