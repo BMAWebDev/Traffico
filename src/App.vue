@@ -22,6 +22,8 @@
 </script>
 
 <style>
+  /* Stiluri generale */
+
   /* DM Serif Display */
   @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 
@@ -31,5 +33,25 @@
   * {
     margin: 0;
     padding: 0;
+  }
+
+  body,
+  #app {
+    overflow-x:hidden;
+  }
+  
+  a,
+  a[href] {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .d-none{
+    display: none;
+  }
+
+  .animate {
+    transform: translate(0, 0);
+    transition: transform 3s ease;
   }
 </style>

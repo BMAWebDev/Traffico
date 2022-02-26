@@ -1,0 +1,106 @@
+.how-to-apply{
+  margin-top: 100px;
+  margin-bottom: 165px;
+}
+
+.how-to-apply .master-container{
+  display: flex;
+  margin: 0 100px;
+}
+
+.how-to-apply .master-container .disk{
+  width: 50%;
+}
+
+.how-to-apply .right-content{
+  padding-top: 100px;
+}
+
+.how-to-apply .master-container .right-content h2.section-title{
+  font: 24px Rubik;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #EE4D47;
+  margin-bottom: 40px;
+}
+
+.how-to-apply .master-container .right-content p.section-description{
+  font: 18px Rubik;
+  font-weight: 300;
+  line-height: 40px;
+  max-width: 470px;
+  margin-bottom: 70px;
+}
+
+.how-to-apply .master-container .right-content .question-container{
+  background: #FCDDD490;
+  border-left: 10px solid #ED4D47;
+  border-radius: 8px 2px 2px 8px;
+}
+
+.how-to-apply .master-container .right-content .question-container p.question-text{
+  font: 24px Rubik;
+  font-weight: 500;
+  line-height: 36px;
+  padding: 30px 55px;
+}
+
+.how-to-apply .master-container .left-content img{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.how-to-apply .master-container .left-content img.initialAnimPos{
+  transform: translate(-750px, 0);
+}
+
+@media screen and (max-width: 1200px){
+  .how-to-apply .master-container{
+    flex-direction: column;
+  }
+
+  .how-to-apply .master-container .disk{
+    width: 100%;
+    text-align: center;
+    padding-top: 0;
+  }
+
+  .how-to-apply .master-container .right-content p.section-description{
+    margin: 0 auto 70px;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .how-to-apply .master-container{
+    margin: 0 100px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .how-to-apply .master-container{
+    margin: 0 30px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .how-to-apply{
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .how-to-apply .right-content{
+    padding-top: 0;
+  }
+
+  .how-to-apply .master-container .right-content p.section-description{
+    font-size: 16px;
+  }
+
+  .how-to-apply .master-container .right-content .question-container p.question-text{
+    font-size: 18px;
+    padding: 20px 25px;
+  }
+}
