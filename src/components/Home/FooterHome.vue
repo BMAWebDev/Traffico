@@ -1,5 +1,5 @@
 <template>
-  <section class="footer-home">
+  <section id="footer-home-section" class="footer-home">
     <div class="master-container">
       <div class="background"></div>
       <div class="row1">
@@ -22,9 +22,9 @@
           <img src="@/assets/img/logo.svg" alt="">
         </div>
         <ul class="navigation-container">
-          <a href="#"><li>About</li></a>
-          <a href="#"><li>How to</li></a>
-          <a href="#"><li>FAQS</li></a>
+          <a href="#about-us-section"><li>About</li></a>
+          <a href="#how-to-apply-section"><li>How to</li></a>
+          <a href="#faq-section"><li>FAQS</li></a>
         </ul>
       </div>
     </div>

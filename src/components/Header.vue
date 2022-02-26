@@ -6,10 +6,10 @@
       </div>
       <nav class="navbar display-desktop">
         <ul>
-          <a href="#"><li>About</li></a>
-          <a href="#"><li>How To</li></a>
-          <a href="#"><li>FAQS</li></a>
-          <a href="#"><li class="contact-us-btn">Contact Us</li></a>
+          <a href="#about-us-section"><li>About</li></a>
+          <a href="#how-to-apply-section"><li>How To</li></a>
+          <a href="#faq-section"><li>FAQS</li></a>
+          <a href="#footer-home-section"><li class="contact-us-btn">Contact Us</li></a>
         </ul>
       </nav>
       <div @click="toggleMenu" class='burger-menu display-mobile' :class="{ 'active-menu': mobileMenuActive }">
@@ -17,10 +17,10 @@
         
         <nav class="navbar menu-mobile d-none"> 
           <ul>
-            <a href="#"><li>About</li></a>
-            <a href="#"><li>How To</li></a>
-            <a href="#"><li>FAQS</li></a>
-            <a href="#"><li class="contact-us-btn">Contact Us</li></a>
+            <a href="#about-us-section"><li>About</li></a>
+            <a href="#how-to-apply-section"><li>How To</li></a>
+            <a href="#faq-section"><li>FAQS</li></a>
+            <a href="#footer-home-section"><li class="contact-us-btn">Contact Us</li></a>
           </ul>
         </nav>
       </div>

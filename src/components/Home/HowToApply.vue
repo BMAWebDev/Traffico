@@ -1,5 +1,5 @@
 <template>
-  <section class="how-to-apply">
+  <section id="how-to-apply-section" class="how-to-apply">
     <div class="master-container">
       <div class="disk left-content">
         <img class="how-to-apply-call animate initialAnimPos" src="@/assets/img/how-to-apply-call.svg" alt="">

@@ -1,5 +1,5 @@
 <template>
-  <section class="about-us">
+  <section id="about-us-section" class="about-us">
     <div class="master-container">
       <div class="disk left-content">
         <div class="text-container">

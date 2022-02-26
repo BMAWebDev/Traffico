@@ -1,5 +1,5 @@
 <template>
-  <section class="faq">
+  <section id="faq-section" class="faq">
     <div class="master-container">
       <div class="colored-background"></div>
       <div class="section-content">
