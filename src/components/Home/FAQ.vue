@@ -42,8 +42,6 @@
       loadMore(){
         this.currentQuestionsAvailable += this.questionsPerLoad
         this.questionsToShow = this.questions.slice(0, this.currentQuestionsAvailable)
-
-        console.log(this.currentQuestionsAvailable);
       }
     },
     async mounted() {
