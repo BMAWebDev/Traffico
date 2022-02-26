@@ -38,7 +38,13 @@
     components: {
       Question
     },
-    methods: {      
+    methods: {
+      /**
+       * load more function triggered on button click
+       * it gets all the questions from the axios request
+       * and slices the first 5 questions, adding questionsPerLoad
+       * questions by clicking the button
+       */
       loadMore(){
         this.currentQuestionsAvailable += this.questionsPerLoad
         this.questionsToShow = this.questions.slice(0, this.currentQuestionsAvailable)

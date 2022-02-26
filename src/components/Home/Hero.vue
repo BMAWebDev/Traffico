@@ -23,6 +23,7 @@
       window.removeEventListener('scroll', this.animate);
     },
     methods: {
+      // function to detect element position on scroll and toggle the animation process
       animate(){
         const car = document.querySelector('.car.animate');
         if(window.scrollY >= car.offsetTop - car.height){
